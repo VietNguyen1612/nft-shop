@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "NFTShop_backend": {
+      "main": "src/NFTShop_backend/main.mo",
+      "type": "motoko"
+    },
+    "NFTShop_frontend": {
+      "dependencies": [
+        "NFTShop_backend"
+      ],
+      "source": [
+        "src/NFTShop_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "NFTShop_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
